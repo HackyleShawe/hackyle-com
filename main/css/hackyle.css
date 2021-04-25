@@ -1,6 +1,6 @@
 
 /*头部导航*/
-#NavigationHead {
+.NavigationHead {
 	text-align: right;
 	font-family: "微软雅黑";
 	font-size: 17px;
@@ -9,14 +9,23 @@
 }
 
 /*图片LOGO*/
-#ImgDisplay {
+.ImgDisplay {
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 10px;
 }
 
+
+/************************************************Common Search*************************************************/
+/*关键字输入框*/
+.InputKeysClass {
+	text-align: center; /*让div内部文字居中*/
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
 /*输入框格式控制*/
-#keyWords {
+.Keys {
 	/*控制高度*/
 	height: 30px;
 	/*控制字体*/
@@ -27,89 +36,123 @@
 }
 
 
-/*关键字输入框*/
-#InputKeyWords {
-	text-align: center; /*让div内部文字居中*/
-	margin: 0 auto;
-	margin-top: 10px;
-}
-
-
 /*搜索引擎列表*/
-#SearchEngineList {
+.SearchEngineList {
 	text-align: center; /*让div内部文字居中*/
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
+
+
 /*--------------------------国内主流--------------------------*/
-#baidu {
+.color_a01 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	color:#ffffff;
 	background-color: #3385ff;
 }
-#sogou {
+.color_a02 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	color: #ff6f17;
 	background-color: #f2f2f2;
 }
-#dogedoge {
+.color_a03 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	color: #2e344d;
 	background-color: #ffce7f;
 }
+.color_a04 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: #17ceeb;
+}
 
 /*--------------------------国外主流--------------------------*/
-#google {
+.color_b01 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	color: #ea4335;
 	background-color: #34a853;
 }
-#duckduckgo {
+.color_b02 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	background-color: #de5833;
 }
-#yandex {
+.color_b03 {
 	font-family: "微软雅黑";
 	font-size: 20px;
 	background-color: #ffd633;
 }
 
-/*--------------------------国内小众--------------------------*/
-#bing {
+/*--------------------------其他--------------------------*/
+.color_c01 {
 	font-family: "微软雅黑";
 	font-size: 20px;
-	background-color: #17ceeb;
-}
-#magi {
-	font-family: "微软雅黑";
-	font-size: 20px;
-	background-color: #2b2b2f;
+	background-color: #de1c31;
 }
 
-#miji {
+
+
+/*************************************************************************************************/
+
+
+
+/************************************************Tech Search*************************************************/
+
+/*--------------------------国内主流--------------------------*/
+.color_h01 {
 	font-family: "微软雅黑";
 	font-size: 20px;
-	color: #2e344d;
-	background-color: #95de64;
+	color: green;
+	background-color: #f07c82;
 }
-#lookao {
+.color_h02 {
 	font-family: "微软雅黑";
 	font-size: 20px;
-	color: #646462;
-	background-color: #ffffff;
+	color: white;
+	background-color: #2b1216;
 }
+.color_h03 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #bff7e4;
+	background-color: #258788;
+}
+.color_h04 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: red;
+	background-color: #1d6fd5;
+}
+
+
+/*--------------------------国外主流--------------------------*/
+.color_j01 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #f0f4c1;
+	background-color: #65638a;
+}
+
+/*--------------------------其他--------------------------*/
+.color_k01 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: white;
+	background-color: #dd4e00;
+}
+/*************************************************************************************************/
+
 
 
 /*页面底部*/
-#footer {
+.footer {
 	text-align: center; /*让div内部文字居中*/
 	margin: 0 auto;
-	margin-top: 300px;
+	margin-top: 100px;
 }

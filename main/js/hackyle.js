@@ -9,77 +9,131 @@
 
 $(function() {
 	//双击重置输入框内的数据
-	$("#keyWords").dblclick(function() {
-		 $("#keyWords").val("");
+	$("#CommonKeys").dblclick(function() {
+		 $("#CommonKeys").val("");
 	});
+	$("#TechKeys").dblclick(function() {
+		 $("#TechKeys").val("");
+	});
+	
+	/*通用搜索*/
+	CommonsSearch();
 
-/*-------------------------------------------------------------------------------*/	
+	/*技术社区搜索*/
+	TechSearch();
+});
+
+
+
+/********************************************Commons Search*****************************************************/
+function CommonsSearch() {
+	/*-------------------------------------------------------------------------------*/	
 	// 使用百度进行搜索
 	$("#baidu").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://www.baidu.com/s?ie=utf-8&wd=";
 		window.open(origin+keyWords)
 	});
 	// 使用搜狗进行搜索
 	$("#sogou").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://www.sogou.com/web?ie=utf-8&query=";
 		window.open(origin+keyWords)
 	});
-	// 使用DogeDoge进行搜索
-	$("#dogedoge").click(function() {
-		var keyWords = $("#keyWords").val();
-		var origin = "https://www.dogedoge.com/results?q=";
+	// 使用WinXin进行搜索
+	$("#weixin").click(function() {
+		var keyWords = $("#CommonKeys").val();
+		var origin = "https://weixin.sogou.com/weixin?type=2&ie=utf8&query=";
 		window.open(origin+keyWords)
 	});
-
+	// 使用Bing进行搜索
+	$("#bing").click(function() {
+		var keyWords = $("#CommonKeys").val();
+		var origin = "https://cn.bing.com/search?q=";
+		window.open(origin+keyWords)
+	});
 /*-------------------------------------------------------------------------------*/	
 	// 使用Google进行搜索
 	$("#google").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://www.google.com/search?q=";
 		window.open(origin+keyWords)
 	});
 	// 使用duckduckgo进行搜索
 	$("#duckduckgo").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://duckduckgo.com/?q=";
 		window.open(origin+keyWords)
 	});
 	// 使用yandex进行搜索
 	$("#yandex").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://yandex.com/search/?text=";
 		window.open(origin+keyWords)
 	});
 
 /*-------------------------------------------------------------------------------*/	
-	// 使用Bing进行搜索
-	$("#bing").click(function() {
-		var keyWords = $("#keyWords").val();
-		var origin = "https://cn.bing.com/search?q=";
-		window.open(origin+keyWords)
-	});
+	
 	// 使用Magi进行搜索
 	$("#magi").click(function() {
-		var keyWords = $("#keyWords").val();
+		var keyWords = $("#CommonKeys").val();
 		var origin = "https://magi.com/search?q=";
 		window.open(origin+keyWords)
 	});
+}
+/*************************************************************************************************/
 
-	// 使用miji进行搜索
-	$("#miji").click(function() {
-		var keyWords = $("#keyWords").val();
-		var origin = "https://mijisou.com/?q=";
+
+
+/*******************************************Tech Search******************************************************/
+function TechSearch() {
+	// 使用CSDN进行搜索
+	$("#csdn").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "https://so.csdn.net/so/search?q=";
 		window.open(origin+keyWords)
 	});
-	// 使用lookao进行搜索
-	$("#lookao").click(function() {
-		var keyWords = $("#keyWords").val();
-		var origin = "https://lookao.com/search?q=";
+
+	// 使用JueJin进行搜索
+	$("#JueJin").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "https://juejin.cn/search?query=";
 		window.open(origin+keyWords)
 	});
-});
+
+	// 使用SegmentFault进行搜索
+	$("#SegmentFault").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "https://segmentfault.com/search?q=";
+		window.open(origin+keyWords)
+	});
 
 
+	// 使用GeekBang进行搜索
+	$("#GeekBang").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "https://s.geekbang.org/search/c=0/k=";
+		window.open(origin+keyWords+'/t=')
+	});
+	
+
+/*-------------------------------------------------------------------------------*/	
+	// 使用StackOverflow进行搜索
+	$("#StackOverflow").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "https://stackoverflow.com/questions/tagged/";
+		window.open(origin+keyWords)
+	});
+
+
+/*-------------------------------------------------------------------------------*/	
+	// 使用51CTO进行搜索
+	$("#cto").click(function() {
+		var keyWords = $("#TechKeys").val();
+		var origin = "http://so.51cto.com/index.php?keywords=";
+		window.open(origin+keyWords)
+	});
+}
+
+/*************************************************************************************************/
 
