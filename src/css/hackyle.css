@@ -1,0 +1,215 @@
+
+/*头部导航*/
+.navigator {
+	text-align: right;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	color: #FF0000;
+	margin-top: 20px;
+}
+
+/*图片LOGO*/
+.logo {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/************************************************Search*************************************************/
+/*关键字输入框*/
+.keys-input {
+	text-align: center; /*让div内部文字居中*/
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/*输入框格式控制*/
+.Keys {
+	/*控制高度*/
+	height: 30px;
+	/*控制字体*/
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #FF0000;
+	text-align: center;
+}
+
+
+/*搜索引擎列表*/
+.searcher {
+	text-align: center; /*让div内部文字居中*/
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.color_a01 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color:#ffffff;
+	background-color: #3385ff;
+}
+.color_a02 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #ff6f17;
+	background-color: #f2f2f2;
+}
+.color_a03 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #2e344d;
+	background-color: #ffce7f;
+}
+.color_a04 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: #17ceeb;
+}
+
+/*--------------------------国外主流--------------------------*/
+.color_b01 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #ea4335;
+	background-color: #34a853;
+}
+.color_b02 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: #de5833;
+}
+.color_b03 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: #ffd633;
+}
+
+/*--------------------------其他--------------------------*/
+.color_c01 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: #de1c31;
+}
+/************************************************Search*************************************************/
+
+
+/************************************************小时钟*************************************************/
+/* https://github.com/bradtraversy/50projects50days/tree/master/theme-clock */
+
+.theme-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 370px;
+  width: 370px;
+  overflow: hidden;
+  /*居中*/
+  margin: 0 auto;
+  transition: all 0.5s ease-in;
+  box-sizing: border-box;
+  /*border: solid 1px black;*/
+}
+
+.theme-clock .clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-clock .clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /*让钟表呈现圆盘*/
+  border-radius: 100px;
+  /*圆盘边*/
+  border: solid 3px black;
+}
+
+.theme-clock .needle {
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+}
+
+.theme-clock .needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.theme-clock .needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.theme-clock .needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.theme-clock .center-point {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.theme-clock .center-point::after {
+  content: '';
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.theme-clock .time {
+  font-size: 60px;
+}
+
+.theme-clock .date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.theme-clock .date .circle {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}
+/************************************************小时钟*************************************************/
+
+
+
+/*页面底部*/
+.footer {
+	text-align: center; /*让div内部文字居中*/
+	margin: 0 auto;
+	margin-top: 100px;
+}
